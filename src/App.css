@@ -1,38 +1,280 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+ */
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: #f1f8f6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body::-webkit-scrollbar {
+    display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.flex {
+    display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+.flex-r {
+    flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex-c {
+    flex-direction: column;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+/* Login Register CSS starts */
+.body-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.register-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 36vw;
+    height: 70vh;
+    justify-content: center;
+    gap: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 5px 8px 5px #757272;
+}
+
+.logo-image img {
+    width: 100px;
+}
+
+.heading {
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.register-form input {
+    width: 200px;
+    height: 36px;
+    border-radius: 5px;
+    border-style: solid;
+    font-size: 16px;
+    padding: 3px 8px;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.register-form button {
+    width: 200px;
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #006341;
+    border-style: none;
+}
+
+.already-registered {
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+/* Login Register CSS ends */
+
+
+/* Home page styles */
+.home {
+    font-family: 'Poppins';
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+nav {
+    background-color: teal;
+    padding: 10px 50px;
+    color: #fff;
+}
+
+.navbar {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.navbar-items {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.tracking-container {
+    width: 40vw;
+    padding: 40px 60px;
+    gap: 20px;
+}
+
+.track-heading {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.ladle-group {
+    gap: 20px;
+}
+
+.ladle-card {
+    background-color: #dceeff;
+    width: 500px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 2px 2px 5px #a1cff9;
+}
+
+.image {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.image img {
+    height: 100px;
+}
+
+.ladle-card-header {
+    padding: 10px 20px;
+}
+
+.ladle-card-footer {
+    padding: 10px 20px;
+    background-color: #D8E8E3;
+    gap: 15px;
+    border-radius: 15px;
+}
+
+.detail-button {
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    background-color: #006341;
+    cursor: pointer;
+}
+
+
+
+.tracking-timeline {
+    position: relative;
+    margin: 30px 0px;
+    overflow: scroll;
+    border-radius: 10px;
+    box-shadow: 3px 5px 10px #11263C;
+    padding: 50px 15px;
+    gap: 70px;
+    height: 80vh;
+}
+
+.cancel {
+    position: fixed;
+    top: 120px;
+}
+
+.cancel img {
+    width: 25px;
+}
+
+.tracking-timeline::-webkit-scrollbar {
+    display: none;
+}
+
+.tracking-timeline-box {
+    box-shadow: 1px 1px 5px #006341;
+    width: 380px;
+    padding: 10px;
+    background-color: #D8E8E3;
+    border-radius: 15px;
+    gap: 10px;
+}
+
+.timeline-heading {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 700;
+    justify-content: space-between;
+}
+
+.efficiency {
+    width: 130px;
+    padding: 10px;
+    border-radius: 15px;
+    color: #fff;
+    opacity: 40%;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.timeline-description {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.arrow-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.arrow-img-to img{
+    height: 30px;
+    width: 100px;
+    transform: rotate(90deg);
+}
+.arrow-img-from img{
+    height: 30px;
+    width: 100px;
+    transform: rotate(-90deg);
+}
+.ladles-passed{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 12px;
+    width: 75px;
+    text-align: center;
 }
